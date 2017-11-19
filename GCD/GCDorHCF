@@ -9,4 +9,4 @@ def findGCD(x,y):
      return i
   
 x,y = map(int,input().split())
-print(findGCD(x,y))
+print("GCD of numbers {0},{1} = {2}".format(x,y,findGCD(x,y)))

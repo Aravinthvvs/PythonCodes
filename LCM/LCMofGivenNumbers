@@ -1,0 +1,11 @@
+def findGCD(x,y):
+  smallNo = min(x,y)
+  if smallNo == 0:
+    return max(x,y)
+  for i in range(smallNo,0,-1):
+   if x%i == 0 and y%i == 0 :
+     return i
+  
+x,y = map(int,input().split())
+#LCM of given Numbers  =  Multiplication of given Numbers / GCD of given Numbers
+print("LCM of numbers {0},{1} = {2}".format(x,y,(x*y/findGCD(x,y))))
